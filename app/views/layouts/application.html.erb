@@ -13,8 +13,10 @@
     <% if current_user %>
       <p> Currently logged in in as: <%= current_user.email %> </p>
       <%= button_to 'Sign Out', session_url, method: :delete %>
-
     <% end %>
-    <%= yield %>
+    <div class='container-fluid text-center'>
+      <h1> MyMusicApp! <h1>
+        <%= yield %>
+    </div>
   </body>
 </html>
